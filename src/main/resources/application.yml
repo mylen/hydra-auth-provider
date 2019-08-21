@@ -8,13 +8,40 @@ logging:
     com.richemont.sso.demo.compose.client: DEBUG
 spring:
   application:
-    name: demo-user-management
+    name: sso-auth-provider
   zipkin:
     base-url: http://localhost:9411/
   sleuth:
     sampler:
       probability: 1
-demo:
-  auth:
+sso:
+  hydra:
     name: AuthService
     base-url: http://localhost:4445/oauth2/auth
+    endpoints:
+      loginRequest: /requests/login
+      loginAcceptRequest: /requests/login/accept
+      loginRejectRequest: /requests/login/reject
+      consentRequest: /requests/consent
+      consentAcceptRequest: /requests/consent/accept
+      consentRejectRequest: /requests/consent/reject
+      logoutRequest: /requests/logout
+      logoutAcceptRequest: /requests/logout/accept
+      logoutRejectRequest: /requests/logout/reject
+  auth:
+    base-url: http://localhost:8087
+    version: /v1/
+    endpoints:
+      login: /login
+      consent: /consent
+      logout: /logout
+  front:
+    scheme: http
+    host: localhost
+    port: 4200
+    version:
+    endpoints:
+      login: login
+      consent: consent
+      logout: logout
+

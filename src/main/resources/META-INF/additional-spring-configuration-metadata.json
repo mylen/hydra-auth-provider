@@ -1,0 +1,59 @@
+{
+  "properties": [
+    {
+      "name": "sso.hydra.name",
+      "type": "java.lang.String",
+      "description": "Description for sso.hydra.name."
+    },
+    {
+      "name": "sso.hydra.base-url",
+      "type": "java.lang.String",
+      "description": "Description for sso.hydra.base-url."
+    },
+    {
+      "name": "sso.hydra.endpoints.loginRequest",
+      "type": "java.lang.String",
+      "description": "Description for sso.hydra.endpoints.loginRequest."
+    },
+    {
+      "name": "sso.hydra.endpoints.loginAcceptRequest",
+      "type": "java.lang.String",
+      "description": "Description for sso.hydra.endpoints.loginAcceptRequest."
+    },
+    {
+      "name": "sso.hydra.endpoints.loginRejectRequest",
+      "type": "java.lang.String",
+      "description": "Description for sso.hydra.endpoints.loginRejectRequest."
+    },
+    {
+      "name": "sso.hydra.endpoints.consentRequest",
+      "type": "java.lang.String",
+      "description": "Description for sso.hydra.endpoints.consentRequest."
+    },
+    {
+      "name": "sso.hydra.endpoints.consentAcceptRequest",
+      "type": "java.lang.String",
+      "description": "Description for sso.hydra.endpoints.consentAcceptRequest."
+    },
+    {
+      "name": "sso.hydra.endpoints.consentRejectRequest",
+      "type": "java.lang.String",
+      "description": "Description for sso.hydra.endpoints.consentRejectRequest."
+    },
+    {
+      "name": "sso.hydra.endpoints.logoutRequest",
+      "type": "java.lang.String",
+      "description": "Description for sso.hydra.endpoints.logoutRequest."
+    },
+    {
+      "name": "sso.hydra.endpoints.logoutAcceptRequest",
+      "type": "java.lang.String",
+      "description": "Description for sso.hydra.endpoints.logoutAcceptRequest."
+    },
+    {
+      "name": "sso.hydra.endpoints.logoutRejectRequest",
+      "type": "java.lang.String",
+      "description": "Description for sso.hydra.endpoints.logoutRejectRequest."
+    }
+  ]
+}
