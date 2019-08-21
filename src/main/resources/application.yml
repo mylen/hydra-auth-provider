@@ -1,0 +1,20 @@
+server:
+  port: 8087
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    feign: DEBUG
+    com.richemont.sso.demo.compose.client: DEBUG
+spring:
+  application:
+    name: demo-user-management
+  zipkin:
+    base-url: http://localhost:9411/
+  sleuth:
+    sampler:
+      probability: 1
+demo:
+  auth:
+    name: AuthService
+    base-url: http://localhost:4445/oauth2/auth
